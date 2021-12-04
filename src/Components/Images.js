@@ -24,6 +24,16 @@ const Images = [
     img: "images/blackpanther2_lob_crd_02.jpg",
     title: "Black Panther",
   },
+  {
+    id: 6,
+    img: "images/thorloveandthunder_lob_crd_02.jpg",
+    title: "Thor: Love and Thunder",
+  },
+  {
+    id: 7,
+    img: "images/ds2_card_1.jpg",
+    title: "Doctor Strange",
+  },
 ];
 
 export default Images;
