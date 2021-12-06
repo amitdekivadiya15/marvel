@@ -21,7 +21,7 @@ const MainCart = (props) => {
                 style={{ width: "240px" }}
                 cover={<img alt="fantastic four" src={img} />}
               >
-                <Meta title={title} />
+                <Meta description={title} style={{ fontWeight: "bold" }} />
               </Card>
             </div>
           );
