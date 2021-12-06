@@ -1,10 +1,19 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Card } from "antd";
 import Images from "./Images";
 const { Meta } = Card;
 
 const MainCart = (props) => {
+  const history = useHistory();
   const item = Images;
+
+  const routeChange = () => {
+    let link = Images.link;
+    let path = `/movie/${link}`;
+    history.push(path);
+  };
+
   return (
     <>
       <div className="my-3">
@@ -15,7 +24,7 @@ const MainCart = (props) => {
           const { id, img, title } = e;
 
           return (
-            <div className="col" key={id}>
+            <div className="col" key={id} onClick={routeChange}>
               <Card
                 hoverable
                 style={{ width: "240px" }}
