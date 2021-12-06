@@ -1,11 +1,11 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             <svg width="130" height="52" xmlns="http://www.w3.org/2000/svg">
               <rect fill="#EC1D24" width="100%" height="100%"></rect>
               <path
@@ -18,7 +18,7 @@ const Navbar = () => {
                 d="M31.5 48V4H21.291l-3.64 22.735L14.102 4H4v44h8V26.792L15.577 48h4.229l3.568-21.208V48z"
               ></path>
             </svg>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -33,44 +33,29 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" to="/video">
                   VIDEOS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  CHARACTERS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/comic">
                   COMICS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/movie">
                   MOVIES
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/tvshow">
                   TV SHOWS
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
+                <Link className="nav-link" to="/game">
                   GAMES
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  NEWS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  MORE
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
